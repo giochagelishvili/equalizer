@@ -1,0 +1,399 @@
+/* global styles */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #F2F2F2;
+}
+
+/* header styles */
+
+header {
+    padding: 4rem 2.4rem 0 2.4rem;
+
+    background-image: url(/assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.header-pattern-container {
+    display: none;
+}
+
+/* header text container contains
+we make your music sound extraordinary heading
+and paragraph below it */
+
+.header-text-container {
+    margin-top: 6.4rem;
+}
+
+#header-headline, #header-paragraph {
+    color: #191826;
+    font-style: normal;
+}
+
+#header-headline {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.454545px;
+}
+
+#header-paragraph {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+
+    margin-top: 2.4rem;
+}
+
+/* !!! HEADER STYLES END HERE !!! */
+/* !!! MAIN STYLES START HERE !!! */
+
+/* phone container is the one with background image */
+
+.main-container {
+    background-color: #191826;
+    border-radius: 1.2rem;
+
+    background-image: url(/assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+    margin-top: 16.6rem;
+}
+
+.phone-container {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: -9.8rem;
+}
+
+#phone {
+    width: 20.9rem;
+}
+
+/* download container contains Preqmium EQ heading, 
+paragraph below it, price and buttons */
+
+.download-container {
+    background-color: #FA7453;
+    border-radius: 1.2rem;
+
+    padding: 4.8rem 3.7rem;
+}
+
+#premium-eq, #download-container-paragraph,
+#price {
+    font-style: normal;
+    color: #FCFAF9;
+}
+
+#premium-eq {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+#download-container-paragraph {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+
+    margin-top: 1.2rem;
+}
+
+#price {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    font-weight: 700;
+    font-size: 6.5rem;
+    line-height: 5.2rem;
+
+    margin-top: 3.6rem;
+}
+
+#month {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.2px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+
+    margin-top: 3.2rem;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.78rem;
+    width: 29.6rem;
+
+    padding: 1.4rem 0;
+    border-radius: 1.2rem;
+    border: none;
+
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-align: center;
+    letter-spacing: -0.18px;
+}
+
+#ios-button {
+    background-color: #191826;
+    color: #FCFAF9;
+}
+
+#android-button {
+    background-color: #FCFAF9;
+    color: #191826;
+}
+
+/* !!! HERE ENDS MAIN STYLES !!! */
+/* !!! HERE STARTS FOOTER STYLES !!! */
+
+footer {
+    padding: 6.4rem 2.4rem 8rem 2.4rem;
+}
+
+.footer-text-container {
+    margin-top: 3.2rem;
+}
+
+#footer-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #191826;
+}
+
+#email {
+    display: block;
+    font-weight: 700;
+}
+
+.social-media-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    margin-top: 6.4rem;
+}
+
+/* tablet styles */
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(/assets/bg-main-tablet.png);
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    /* header styles */
+
+    header {
+        padding: 6.2rem 21.5rem 0 3.9rem;
+    }
+
+    /* header pattern container contains
+    pattern on the right side of header
+    it does not appear on mobile */
+
+    .header-pattern-container {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        overflow-x: hidden;
+    }
+
+    #header-pattern {
+        position: relative;
+        top: -3.2rem;
+        right: -3.5rem;
+
+        width: 26.6rem;
+    }
+
+    .header-text-container {
+        margin-top: 9.5rem;
+    }
+
+    #header-headline {
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+        letter-spacing: -0.727273px;
+    }
+
+    #header-paragraph {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+
+        margin-top: 2.8rem;
+    }
+
+    /* main styles */
+
+    main {
+        padding: 0 3.9rem 0 3.3rem;
+    }
+
+    /* main container contains phone illustration
+    and download container */
+
+    .main-container {
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    .phone-container {
+        position: relative;
+        right: -4.5rem;
+        top: -13.8rem;
+    }
+
+    #phone {
+        width: 27rem;
+    }
+
+    .download-container {
+        position: relative;
+        left: -4.5rem;
+        bottom: -15rem;
+
+        width: 30rem;
+    }
+
+    /* footer styles */
+
+    footer {
+        padding: 0 3.9rem 8.5rem 3.3rem;
+        margin-top: 18.3rem;
+    }
+
+    .social-media-icon-container, 
+    .footer-text-container {
+        margin: 0;
+    }
+
+    .footer-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 3.2rem;
+    }
+}
+
+/* desktop styles */
+
+@media screen and (min-width: 1366px) {
+    /* header styles */
+
+    header {
+        padding: 6.2rem 0 0 16.6rem;
+
+        background-image: url(/assets/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #header-headline {
+        font-size: 8.8rem;
+        line-height: 8.8rem;
+        letter-spacing: -1px;
+        width: 100rem;
+    }
+
+    #header-paragraph {
+        font-size: 2rem;
+        line-height: 3.4rem;
+        width: 82.5rem;
+    }
+
+    #header-pattern {
+        right: 0;
+        width: 31.2rem;
+    }
+
+    /* main styles */
+
+    main {
+        padding: 0 16.5rem;
+    }
+
+    .main-container {
+        margin-top: 32.1rem;
+        gap: 16.3rem;
+    }
+
+    .download-container, .phone-container {
+        right: 0;
+        left: 0;
+    }
+
+    #phone {
+        width: 29.6rem;
+    }
+
+    /* footer styles */
+
+    footer {
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+
+        padding: 0 16.5rem 9.1rem 16.5rem;
+        margin-top: 20.2rem;
+    }
+
+    .footer-flex {
+        margin: 0;
+    }
+
+    /* hover styles */
+
+    #ios-button, #android-button,
+    #facebook-icon, #instagram-icon, #twitter-icon {
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    #ios-button:hover {
+        background-color: #66E2DC;
+    }
+
+    #android-button:hover {
+        background-color: #FFB964;
+    }
+
+    #facebook-icon:hover, #instagram-icon:hover, 
+    #twitter-icon:hover {
+        transform: scale(1.1);
+    }
+}
